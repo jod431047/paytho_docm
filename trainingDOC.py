@@ -1,7 +1,6 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 for number in numbers:
-    if number % 2 == 0:
-        continue
-    print(number)
-    
+    if number == 4:
+        print("Zahl 4 gefunden!")
+        break
+else:
+    print("Zahl 4 nicht gefunden!")

@@ -1,7 +1,11 @@
-try:
-    num1 = 10
-    num2 = 0
-    result = num1 / num2
-    print("Das Ergebnis ist:", result)
-except ZeroDivisionError:
-    print("Fehler: Division durch Null ist nicht erlaubt!")
+x = 5
+y = 10
+
+if x < y:
+    print("x ist kleiner als y")
+    result = True
+else:
+    print("x ist größer oder gleich y")
+    result = False
+
+print("Das Ergebnis ist:", result)

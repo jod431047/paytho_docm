@@ -1,7 +1,11 @@
-fruits = ["Apfel", "Banane", "Kirsche", "Mango", "Orange"]
+def divide_numbers(a, b):
+    try:
+        result = a / b
+        print("Ergebnis:", result)
+    except ZeroDivisionError:
+        print("Fehler: Division durch Null ist nicht erlaubt.")
+    finally:
+        print("Das 'finally'-Block wird immer ausgeführt.")
 
-print("Liste vor del:", fruits)  # Ausgabe: Liste vor del: ['Apfel', 'Banane', 'Kirsche', 'Mango', 'Orange']
-
-del fruits[2]
-
-print("Liste nach del:", fruits)  # Ausgabe: Liste nach del: ['Apfel', 'Banane', 'Mango', 'Orange']
+divide_numbers(10, 2)
+divide_numbers(8, 0)

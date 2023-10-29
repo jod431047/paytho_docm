@@ -1,5 +1,7 @@
-# Beispiel: Verwendung des Schlüsselworts "for"
-fruits = ["Apfel", "Banane", "Orange"]
+# Beispiel: Verwendung des Schlüsselworts "import"
+import math
 
-for fruit in fruits:
-    print(fruit)
+radius = 5
+area = math.pi * radius ** 2
+
+print("Der Flächeninhalt des Kreises beträgt:", area)

@@ -1,6 +1,5 @@
-for number in numbers:
-    if number == 4:
-        print("Zahl 4 gefunden!")
-        break
-else:
-    print("Zahl 4 nicht gefunden!")
+from math import pi
+
+radius = 10
+area = pi * radius**2
+print("Der Flächeninhalt des Kreises beträgt:", area)

@@ -1,5 +1,6 @@
-def say_hello():
-    print("Hallo! Wie geht es dir?")
-
-# Aufruf der Funktion say_hello
-say_hello()
+try:
+    # Code, der möglicherweise eine Ausnahme auslöst
+    x = 10 / 0
+except ZeroDivisionError:
+    # Code, der ausgeführt wird, wenn eine ZeroDivisionError-Ausnahme auftritt
+    print("Eine Division durch Null ist nicht erlaubt!")

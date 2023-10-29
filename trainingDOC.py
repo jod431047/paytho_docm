@@ -1,5 +1,6 @@
-from math import pi
+fruits = ["apple", "banana", "orange"]
 
-radius = 10
-area = pi * radius**2
-print("Der Flächeninhalt des Kreises beträgt:", area)
+if "apple" in fruits:
+    print("Ja, 'apple' ist in der Liste.")
+else:
+    print("Nein, 'apple' ist nicht in der Liste.")

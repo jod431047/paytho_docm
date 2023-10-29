@@ -1,5 +1,8 @@
-# Beispiel: Verwendung des Schlüsselworts "while"
-x = 0
-while x < 5:
-    print("x ist", x)
-    x += 1
+# Beispiel: Verwendung des Schlüsselworts "and"
+x = 5
+y = 10
+
+if x > 0 and y < 15:
+    print("Beide Bedingungen sind erfüllt!")
+else:
+    print("Mindestens eine Bedingung ist nicht erfüllt!")

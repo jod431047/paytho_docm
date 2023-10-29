@@ -1,7 +1,7 @@
-x = 5
-y = 10
-
-if x > 3 or y < 20:
-    print("Mindestens eine Bedingung ist wahr, wird ausgeführt!")
-else:
-    print("Keine der Bedingungen ist wahr, wird übersprungen!")
+try:
+    num1 = 10
+    num2 = 0
+    result = num1 / num2
+    print("Das Ergebnis ist:", result)
+except ZeroDivisionError:
+    print("Fehler: Division durch Null ist nicht erlaubt!")

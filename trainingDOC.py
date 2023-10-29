@@ -1,7 +1,7 @@
-# Verwenden des Schlüsselworts "as"
-import math as m
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# Verwenden der as-Funktion zum Runden
-x = 4.6
-rounded = m.floor(x)
-print(rounded)  # Ausgabe: 4
+for number in numbers:
+    if number % 2 == 0:
+        continue
+    print(number)
+    

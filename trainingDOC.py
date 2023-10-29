@@ -1,8 +1,7 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+fruits = ["Apfel", "Banane", "Kirsche", "Mango", "Orange"]
 
-for number in numbers:
-    if number == 6:
-        break
-    print(number)
+print("Liste vor del:", fruits)  # Ausgabe: Liste vor del: ['Apfel', 'Banane', 'Kirsche', 'Mango', 'Orange']
 
-print("Schleife beendet")
+del fruits[2]
+
+print("Liste nach del:", fruits)  # Ausgabe: Liste nach del: ['Apfel', 'Banane', 'Mango', 'Orange']

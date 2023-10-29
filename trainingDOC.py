@@ -1,6 +1,9 @@
-try:
-    # Code, der möglicherweise eine Ausnahme auslöst
-    x = 10 / 0
-except ZeroDivisionError:
-    # Code, der ausgeführt wird, wenn eine ZeroDivisionError-Ausnahme auftritt
-    print("Eine Division durch Null ist nicht erlaubt!")
+x = 10  # Eine globale Variable
+
+def modify_global_variable():
+    global x  # Deklaration, dass die Variable "x" global verwendet wird
+    x = 20    # Änderung des Werts der globalen Variable "x"
+
+print(x)  # Ausgabe: 10
+modify_global_variable()
+print(x)  # Ausgabe: 20

@@ -1,9 +1,5 @@
-def divide(a, b):
-    assert b != 0, "Division durch Null ist nicht erlaubt!"
-    return a / b
+def say_hello():
+    print("Hallo! Wie geht es dir?")
 
-numerator = 10
-denominator = 0
-
-result = divide(numerator, denominator)
-print(result)
+# Aufruf der Funktion say_hello
+say_hello()

@@ -1,8 +1,11 @@
-def generate_numbers():
-    for i in range(1, 6):
-        yield i
+def check_value(value):
+    if value is None:
+        print("Der Wert ist None.")
+    else:
+        print("Der Wert ist nicht None.")
 
-numbers = generate_numbers()
+value1 = 10
+value2 = None
 
-for num in numbers:
-    print(num)
+check_value(value1)
+check_value(value2)

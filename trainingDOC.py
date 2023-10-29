@@ -1,6 +1,6 @@
-fruits = ["apple", "banana", "orange"]
+number = 10
 
-if "apple" in fruits:
-    print("Ja, 'apple' ist in der Liste.")
+if not number == 5:
+    print("Die Zahl ist nicht gleich 5.")
 else:
-    print("Nein, 'apple' ist nicht in der Liste.")
+    print("Die Zahl ist gleich 5.")

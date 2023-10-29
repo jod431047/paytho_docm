@@ -1,6 +1,5 @@
-# Beispiel: Verwendung des Schlüsselworts "pass"
-if bedingung:
-    pass  # Hier kann später Code eingefügt werden
-else:
-    # Hier kann Code für den Fall geschrieben werden, wenn die Bedingung nicht erfüllt ist
-    print("Die Bedingung ist nicht erfüllt.")
+# Beispiel: Verwendung des Schlüsselworts "while"
+x = 0
+while x < 5:
+    print("x ist", x)
+    x += 1

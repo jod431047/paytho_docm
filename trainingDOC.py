@@ -1,6 +1,6 @@
-number = 10
+def add_numbers(a, b):
+    sum = a + b
+    return sum
 
-if not number == 5:
-    print("Die Zahl ist nicht gleich 5.")
-else:
-    print("Die Zahl ist gleich 5.")
+result = add_numbers(5, 3)
+print(result)  # Ausgabe: 8

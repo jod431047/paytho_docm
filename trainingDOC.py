@@ -1,6 +1,8 @@
-def add_numbers(a, b):
-    sum = a + b
-    return sum
+def generate_numbers():
+    for i in range(1, 6):
+        yield i
 
-result = add_numbers(5, 3)
-print(result)  # Ausgabe: 8
+numbers = generate_numbers()
+
+for num in numbers:
+    print(num)

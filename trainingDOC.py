@@ -1,12 +1,14 @@
-def outer_function():
-    x = 10
+def calculate_factorial(n):
+    if n < 0:
+        raise ValueError("Die Fakultät ist nur für nicht-negative Zahlen definiert.")
+    factorial = 1
+    for i in range(1, n + 1):
+        factorial *= i
+    return factorial
 
-    def inner_function():
-        nonlocal x
-        x += 5
-        print("Inner function: x =", x)
-
-    inner_function()
-    print("Outer function: x =", x)
-
-outer_function()
+try:
+    number = int(input("Gib eine Zahl ein: "))
+    result = calculate_factorial(number)
+    print("Die Fakultät von", number, "ist", result)
+except ValueError as e:
+    print("Fehler:", e)

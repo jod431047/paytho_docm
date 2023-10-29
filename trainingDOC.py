@@ -1,9 +1,6 @@
-x = 10  # Eine globale Variable
+x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
 
-def modify_global_variable():
-    global x  # Deklaration, dass die Variable "x" global verwendet wird
-    x = 20    # Änderung des Werts der globalen Variable "x"
-
-print(x)  # Ausgabe: 10
-modify_global_variable()
-print(x)  # Ausgabe: 20
+print(x is y)  # False, da x und y auf unterschiedliche Objekte verweisen
+print(x is z)  # True, da x und z auf dasselbe Objekt verweisen

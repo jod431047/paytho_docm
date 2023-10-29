@@ -1,8 +1,14 @@
-# Beispiel: Verwendung des Schlüsselworts "and"
-x = 5
-y = 10
+# Beispiel: Verwendung des Schlüsselworts "class"
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        print(f"Hallo, ich bin {self.name}, {self.age} Jahre alt.")
 
-if x > 0 and y < 15:
-    print("Beide Bedingungen sind erfüllt!")
-else:
-    print("Mindestens eine Bedingung ist nicht erfüllt!")
+# Instanziierung der Klasse Person
+person1 = Person("Max", 25)
+
+# Aufruf der Methode greet()
+person1.greet()

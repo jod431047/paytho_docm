@@ -1,9 +1,5 @@
-# Beispiel: Verwendung des Schlüsselworts "elif"
-age = 20
+# Beispiel: Verwendung des Schlüsselworts "for"
+fruits = ["Apfel", "Banane", "Orange"]
 
-if age < 18:
-    print("Du bist minderjährig.")
-elif age >= 18 and age < 65:
-    print("Du bist volljährig.")
-else:
-    print("Du bist im Rentenalter.")
+for fruit in fruits:
+    print(fruit)

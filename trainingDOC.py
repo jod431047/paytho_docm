@@ -1,11 +1,8 @@
-x = 5
-y = 10
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-if x < y:
-    print("x ist kleiner als y")
-    result = True
-else:
-    print("x ist größer oder gleich y")
-    result = False
+for number in numbers:
+    if number == 6:
+        break
+    print(number)
 
-print("Das Ergebnis ist:", result)
+print("Schleife beendet")

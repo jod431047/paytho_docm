@@ -1,9 +1,7 @@
-# Verwendung des Schlüsselworts "False"
-bedingung = False
+# Verwenden des Schlüsselworts "as"
+import math as m
 
-if bedingung:
-    print("Die Bedingung ist wahr!")
-else:
-    print("Die Bedingung ist falsch!")
-
-# Ausgabe: Die Bedingung ist falsch!
+# Verwenden der as-Funktion zum Runden
+x = 4.6
+rounded = m.floor(x)
+print(rounded)  # Ausgabe: 4

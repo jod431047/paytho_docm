@@ -1,7 +1,12 @@
-# Beispiel: Verwendung des Schlüsselworts "import"
-import math
+def outer_function():
+    x = 10
 
-radius = 5
-area = math.pi * radius ** 2
+    def inner_function():
+        nonlocal x
+        x += 5
+        print("Inner function: x =", x)
 
-print("Der Flächeninhalt des Kreises beträgt:", area)
+    inner_function()
+    print("Outer function: x =", x)
+
+outer_function()

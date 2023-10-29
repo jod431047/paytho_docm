@@ -1,11 +1,7 @@
-def divide_numbers(a, b):
-    try:
-        result = a / b
-        print("Ergebnis:", result)
-    except ZeroDivisionError:
-        print("Fehler: Division durch Null ist nicht erlaubt.")
-    finally:
-        print("Das 'finally'-Block wird immer ausgeführt.")
-
-divide_numbers(10, 2)
-divide_numbers(8, 0)
+def check_number(num):
+    if num > 0:
+        print("Die Zahl ist positiv.")
+    elif num < 0:
+        print("Die Zahl ist negativ.")
+    else:
+        print("Die Zahl ist null.")

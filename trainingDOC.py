@@ -1,11 +1,9 @@
-def check_value(value):
-    if value is None:
-        print("Der Wert ist None.")
-    else:
-        print("Der Wert ist nicht None.")
+def divide(a, b):
+    assert b != 0, "Division durch Null ist nicht erlaubt!"
+    return a / b
 
-value1 = 10
-value2 = None
+numerator = 10
+denominator = 0
 
-check_value(value1)
-check_value(value2)
+result = divide(numerator, denominator)
+print(result)
